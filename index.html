@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алина & Сергей | Свадьба</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем красивые шрифты с Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Главный экран с большой фоткой -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Алина & Сергей</h1>
+            <p class="date">7 августа 2026</p>
+            <p class="countdown" id="timer">До свадьбы: 100 дней</p>
+        </div>
+    </div>
+
+    <!-- История пары -->
+    <section class="story">
+        <h2>Наша история</h2>
+        <div class="story-text">
+            <p>Мы встретились в самый обычный день, который стал необычным. Алексей заказал кофе, а я перепутала заказы и принесла ему капучино вместо латте. Он сказал: "Судьба любит путаницы". И оказался прав.</p>
+            <p>С тех прошло 5 лет, и теперь мы хотим разделить наш самый счастливый день с вами — нашими самыми близкими людьми.</p>
+        </div>
+    </section>
+
+    <!-- Детали свадьбы -->
+    <section class="details">
+        <h2>Детали праздника</h2>
+        
+        <div class="card-container">
+            <div class="card">
+                <h3>📍 Церемония</h3>
+                <p>Сад "Вдохновение"</p>
+                <p>ул. Цветочная, 15</p>
+                <p>Сбор гостей в 16:00</p>
+                <p>Начало в 16:30</p>
+            </div>
+            
+            <div class="card">
+                <h3>🍽 Банкет</h3>
+                <p>Ресторан "Времена года"</p>
+                <p>набережная реки, 7</p>
+                <p>Фуршет в 18:00</p>
+                <p>Танцы до утра!</p>
+            </div>
+            
+            <div class="card">
+                <h3>🎩 Дресс-код</h3>
+                <p>Благородные оттенки:</p>
+                <p>зеленый, бежевый, пудровый</p>
+                <p class="small">Пожалуйста, избегайте белого цвета (это привилегия невесты)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма подтверждения -->
+    <section class="rsvp">
+        <h2>Ждем вас!</h2>
+        <p>Пожалуйста, подтвердите свое присутствие до 1 мая</p>
+        
+        <form id="rsvpForm">
+            <input type="text" id="name" placeholder="Ваше имя" required>
+            <input type="email" id="email" placeholder="Email для связи">
+            
+            <p>С кем вы придете?</p>
+            <select id="guests">
+                <option value="1">Один/одна</option>
+                <option value="2">С парой (вдвоем)</option>
+                <option value="3-4">С семьей (3-4 человека)</option>
+            </select>
+            
+            <p>Есть ли аллергии или особые пожелания по еде?</p>
+            <textarea id="food" rows="3" placeholder="Напишите, если важно..."></textarea>
+            
+            <button type="submit">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <p>С нетерпением ждем встречи!</p>
+        <p>Алина & Сергей ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

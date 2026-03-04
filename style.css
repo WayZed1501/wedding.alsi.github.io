@@ -1,0 +1,206 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #faf7f2;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 42px;
+    color: #5e4b3a;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+h2:after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: #d4af37;
+    margin: 20px auto 0;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Главный экран (Hero) - УПРОЩЁННАЯ ВЕРСИЯ */
+.hero {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    border: none;
+    background: none;
+    display: block;
+    padding: 0;
+}
+
+.hero-content .date {
+    font-size: 28px;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+}
+
+.hero-content .countdown {
+    font-size: 24px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 30px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+/* История */
+.story {
+    background-color: white;
+    border-radius: 50px 50px 0 0;
+    margin-top: -50px;
+    position: relative;
+    box-shadow: 0 -10px 30px rgba(0,0,0,0.1);
+}
+
+.story-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.story-text p {
+    margin-bottom: 20px;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* Карточки с деталями */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 24px;
+    color: #5e4b3a;
+    margin-bottom: 20px;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.card .small {
+    font-size: 14px;
+    color: #999;
+    font-style: italic;
+}
+
+/* Форма */
+.rsvp {
+    background: linear-gradient(135deg, #f5f0e7, #e8d9cd);
+    border-radius: 30px;
+    margin: 40px auto;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+button {
+    background: #d4af37;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+    font-weight: 600;
+}
+
+button:hover {
+    background: #b8942c;
+}
+
+/* Подвал */
+footer {
+    background: #5e4b3a;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 18px;
+}
+
+/* Адаптивность для телефонов */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 42px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+    
+    section {
+        padding: 40px 20px;
+    }
+}
